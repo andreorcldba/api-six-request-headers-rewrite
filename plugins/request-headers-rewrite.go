@@ -9,7 +9,7 @@ import (
 	"github.com/apache/apisix-go-plugin-runner/pkg/plugin"
 )
 
-const requestBodyRewriteName = "request-body-rewrite"
+const requestBodyRewriteName = "request-headers-rewrite.go"
 
 func init() {
 	if err := plugin.RegisterPlugin(&RequestBodyRewrite{}); err != nil {
